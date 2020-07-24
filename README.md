@@ -1,4 +1,4 @@
-# solace_kdb_fdps_demo
+# scds-solace-kdb
 
 An implementation that consumes data from a normalized SWIM Data Feed over Solace, inserts it into a kdb+ table and uses the [haversine formula](https://www.movable-type.co.uk/scripts/latlong.html) to calculate, in near real-time, the distance travelled per airline. 
 
@@ -21,7 +21,7 @@ An implementation that consumes data from a normalized SWIM Data Feed over Solac
        ### Initializing session
        [21728] Solace session event 0: Session up
    ```
-   To see where data is being consumed, simply run the follow command in the command promps:
+   To see if data is being consumed, simply run the follow command in the command promps:
    ```
     q)fdps
    ```
