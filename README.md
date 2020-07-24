@@ -12,11 +12,10 @@ An implementation that consumes data from a normalized SWIM Data Feed over Solac
 
 1. Install kdb+ 64 bit edition from [kx.com](https://kx.com/connect-with-us/download/)
 2. Install the kdb+ Solace interface using the instructions on the [kxSystems Solace Fusion Interface Repo](https://github.com/KxSystems/solace) or by following this [video](https://www.youtube.com/watch?v=_cGnkrim4K8)
-3. Copy the scripts [common/haversine.q](/common/haversine.q) and [common/solace_init.q](common/solace_init.q) into your Q_HOME directory
-4. Fill in the connection details for your Solace PubSub+ Broker (Cloud or Docker) into the relevant section in [src/fdps-consume.q]
-5. Start the [SWIM FeedHandler](https://github.com/solacese/swim-feed-handler) or the SWIM FeedHandler Simulator to start publishing data 
-6. (Optional) Start the solace-swim-feed-handlers-map UI to consume and visualize the data
-7. Start the fdps-consume process by running `q fdps-consume.q -p 5011` on port 5011 (or any port of your choosing) and you should see the following output: 
+3. Fill in the connection details for your Solace PubSub+ Broker (Cloud or Docker) into the relevant section in [src/fdps-consume.q]
+4. Start the [SWIM FeedHandler](https://github.com/solacese/swim-feed-handler) or the SWIM FeedHandler Simulator to start publishing data 
+5. (Optional) Start the solace-swim-feed-handlers-map UI to consume and visualize the data
+6. Start the fdps-consume process by running `q fdps-consume.q -p 5011` on port 5011 (or any port of your choosing) and you should see the following output: 
    ```...
        ### Initializing session
        [21728] Solace session event 0: Session up
