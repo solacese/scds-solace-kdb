@@ -8,7 +8,6 @@ default.vpn  :"default";
 default.user :"default";
 default.pass :"default";
 
-
 params:.Q.def[`$1_default].Q.opt .z.x;
 -1"### Initializing session";
 initparams:params`SESSION_HOST`SESSION_VPN_NAME`SESSION_USERNAME`SESSION_PASSWORD!`host`vpn`user`pass;
